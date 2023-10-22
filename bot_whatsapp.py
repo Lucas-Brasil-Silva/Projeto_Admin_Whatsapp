@@ -7,12 +7,11 @@ Certifique-se também de que você tenha instalado o WebDriver apropriado para o
 """
 
 # Importação de bibliotecas
-from driver import iniciar_driver, digitacao, pausas # Importa funções personalizadas
-from os import linesep
-import keyboard
+from driver import iniciar_driver, digitacao, pausas, CondicaoEsperada, By # Importa funções personalizadas
 from os import linesep
 import keyboard
 import pyautogui
+from time import sleep
 import csv
 
 def respondendo_membro(driver,wait):
